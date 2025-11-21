@@ -1,13 +1,13 @@
 package org.example;
 
-public class Wallet {
+public final class Wallet {
     private String color;
     private String size;
     private double money;
     private boolean isOpen;
     private boolean isLost;
 
-    public Wallet(String color, String size) {
+    public Wallet(final String color, final String size) {
         this.color = color;
         this.size = size;
         this.money = 0;
@@ -23,7 +23,7 @@ public class Wallet {
         this.isOpen = false;
     }
 
-    public void addMoney(double amount) {
+    public void addMoney(final double amount) {
         if (!isOpen) {
             System.out.println("Wallet is closed!");
             return;
@@ -39,7 +39,7 @@ public class Wallet {
         return this.isLost;
     }
 
-    public void setLost(boolean lost) {
+    public void setLost(final boolean lost) {
         this.isLost = lost;
     }
 
@@ -47,4 +47,3 @@ public class Wallet {
         System.out.println("Money: " + this.money);
     }
 }
-
