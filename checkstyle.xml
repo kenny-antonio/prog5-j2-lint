@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+        "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name="Checker">
+    <module name="TreeWalker">
+
+        <!-- Vérifie les noms de classes (TypeName) -->
+        <module name="TypeName"/>
+
+        <!-- Vérifie les noms de méthodes -->
+        <module name="MethodName"/>
+
+        <!-- Vérifie les noms de variables locales -->
+        <module name="LocalVariableName"/>
+
+        <!-- Vérifie les constantes -->
+        <module name="ConstantName"/>
+
+    </module>
+</module>
